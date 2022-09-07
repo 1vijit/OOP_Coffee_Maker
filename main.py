@@ -24,7 +24,6 @@ while is_on:
         price=drink.cost
         print(f"price of {choice} is {price}")
         if can_make:
-            # total_money=money_machine.process_coins()
             payment=money_machine.make_payment(price)
             if payment:
                 coffee_maker.make_coffee(drink)
